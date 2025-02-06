@@ -15,8 +15,8 @@ public class Personne {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true, nullable = false)
-    private int numCarte;
+    //@Column(unique = true, nullable = false)
+    //private int numCarte;
 
     private String nom;
     private String prenom;
@@ -25,6 +25,7 @@ public class Personne {
     private String email;
     private String adresse;
     private String sexe;
+    private String image;
 
     @Column(name = "date_naissance")
     private LocalDate naissance;
